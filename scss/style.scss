@@ -2,14 +2,195 @@
     font-family: Roboto;
     src: url('/fonts/Roboto-Regular.woff');
 }
+
 @font-face {
     font-family: Roboto-Bold;
     src: url('/fonts/Roboto-Bold.woff');
 }
+
+$green: #0B3B3C;
+$red: #7E0707;
+$light-green: #00B67A;
+$light-grey: #DCDCE6;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto;
+    color: $green;
+    text-align: center;
+}
+
+header {
+    display: grid;
+    height: 80px;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 300px;
+    padding: 0px 40px;
+
+    p {
+        text-transform: uppercase;
+    }
+
+    .left {
+        display: grid;
+        justify-items: start;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .logo {
+        display: grid;
+        justify-items: center;
+    }
+
+    .right {
+        display: grid;
+        justify-items: end;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+
+        .cart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .top {
+                width: 7px;
+            }
+        }
+    }
+}
+
+.info-container {
+    height: 730px;
+    background-size: 100%;
+    background-image: url('/img/background.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .slogan {
+        font-size: 60px;
+        font-family: Roboto-Bold;
+        width: 480px;
+        margin-bottom: 20px;
+    }
+    .sub-slogan {
+        width: 480px;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .button {
+        height: 45px;
+        width: 320px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            letter-spacing: 0.15em;
+        }
+        margin-bottom: 20px;
+    }
+    .get-started {
+        background-color: $red;
+        p {
+            color: white;
+        }
+    }
+    .view-treatments {
+        border: 2px solid $red;
+        p {
+            color: $red;
+        }
+    }
+}
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 0;
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 80px;
+    .benefit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .health {
+        font-family: Roboto-Bold;
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    .stars {
+        display: grid;
+        grid-template-columns: repeat(5, 33px);
+        margin-bottom: 15px;
+        .star {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 30px;
+            background-color: $light-green;
+        }
+        .star:last-child {
+            background: linear-gradient(90deg, $light-green 0%, $light-green 50%, $light-grey 50%, $light-grey 100%);
+        }
+    }
+    .undertext {
+        display: flex;
+        p {
+            font-size: 18px;
+        }
+        .rated {
+            color: $light-green;
+            font-family: Roboto-Bold;
+            margin-right: 3px;
+        }
+    }
+}
+.guide {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 0 200px 56px 200px;
+    grid-template-columns: repeat(3, 1fr);
+    .stage:first-child {
+        margin-left: 30px;
+    }
+    .stage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            max-width: 80%;
+        }
+        .stage-name {
+            margin: 13px 0px;
+            font-family: Roboto-Bold;
+            font-size: 25px;
+        }
+        .arrow {
+            position: absolute;
+            margin-left: 385px;
+        }
+        .arrow-bot {
+            margin-top: 200px;
+            margin-left: 365px;
+        }
+    }
+}
+.arrow-down {
+    padding-bottom: 27px;
 }

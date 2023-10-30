@@ -1,14 +1,189 @@
 @font-face {
-    font-family: Roboto;
-    src: url('/fonts/Roboto-Regular.woff');
+  font-family: Roboto;
+  src: url("/fonts/Roboto-Regular.woff");
 }
 @font-face {
-    font-family: Roboto-Bold;
-    src: url('/fonts/Roboto-Bold.woff');
+  font-family: Roboto-Bold;
+  src: url("/fonts/Roboto-Bold.woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  color: #0B3B3C;
+  text-align: center;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto;
+header {
+  display: grid;
+  height: 80px;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 300px;
+  padding: 0px 40px;
 }
+header p {
+  text-transform: uppercase;
+}
+header .left {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: repeat(3, 1fr);
+}
+header .logo {
+  display: grid;
+  justify-items: center;
+}
+header .right {
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+header .right .cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .right .cart .top {
+  width: 7px;
+}
+
+.info-container {
+  height: 730px;
+  background-size: 100%;
+  background-image: url("/img/background.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.info-container .slogan {
+  font-size: 60px;
+  font-family: Roboto-Bold;
+  width: 480px;
+  margin-bottom: 20px;
+}
+.info-container .sub-slogan {
+  width: 480px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.info-container .button {
+  height: 45px;
+  width: 320px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.info-container .button p {
+  letter-spacing: 0.15em;
+}
+.info-container .get-started {
+  background-color: #7E0707;
+}
+.info-container .get-started p {
+  color: white;
+}
+.info-container .view-treatments {
+  border: 2px solid #7E0707;
+}
+.info-container .view-treatments p {
+  color: #7E0707;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px 0;
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 80px;
+}
+.benefits .benefit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefits .benefit img {
+  margin-right: 10px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review .health {
+  font-family: Roboto-Bold;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.review .stars {
+  display: grid;
+  grid-template-columns: repeat(5, 33px);
+  margin-bottom: 15px;
+}
+.review .stars .star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  background-color: #00B67A;
+}
+.review .stars .star:last-child {
+  background: linear-gradient(90deg, #00B67A 0%, #00B67A 50%, #DCDCE6 50%, #DCDCE6 100%);
+}
+.review .undertext {
+  display: flex;
+}
+.review .undertext p {
+  font-size: 18px;
+}
+.review .undertext .rated {
+  color: #00B67A;
+  font-family: Roboto-Bold;
+  margin-right: 3px;
+}
+
+.guide {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 0 200px 56px 200px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.guide .stage:first-child {
+  margin-left: 30px;
+}
+.guide .stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guide .stage p {
+  max-width: 80%;
+}
+.guide .stage .stage-name {
+  margin: 13px 0px;
+  font-family: Roboto-Bold;
+  font-size: 25px;
+}
+.guide .stage .arrow {
+  position: absolute;
+  margin-left: 385px;
+}
+.guide .stage .arrow-bot {
+  margin-top: 200px;
+  margin-left: 365px;
+}
+
+.arrow-down {
+  padding-bottom: 27px;
+}
+
+/*# sourceMappingURL=style.css.map */
