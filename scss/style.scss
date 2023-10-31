@@ -194,3 +194,53 @@ header {
 .arrow-down {
     padding-bottom: 27px;
 }
+
+.items {
+    border-top: 2px solid lightgray;
+    padding-top: 60px;
+    margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top-text {
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+    .items-els {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+
+        .item {
+            background-color: #E8EFE9;
+            max-width: 670px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:  {
+                top: 22px;
+                bottom: 50px;
+                left: 80px;
+                right: 80px; 
+            }
+            img {
+                width: 400px;
+            }
+            .title {
+                font-size: 21px;
+                font-family: Roboto-Bold;
+                margin: 10px 0px;
+            }
+            .view {
+                margin-top: 22px;
+                font-family: Roboto-Bold;
+                font-size: 15px;
+                padding-bottom: 5px;
+                border-bottom: 3px solid $green;
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

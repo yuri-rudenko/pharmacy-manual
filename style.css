@@ -186,4 +186,51 @@ header .right .cart .top {
   padding-bottom: 27px;
 }
 
+.items {
+  border-top: 2px solid lightgray;
+  padding-top: 60px;
+  margin-bottom: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.items .top-text {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+.items .items-els {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.items .items-els .item {
+  background-color: #E8EFE9;
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.items .items-els .item img {
+  width: 400px;
+}
+.items .items-els .item .title {
+  font-size: 21px;
+  font-family: Roboto-Bold;
+  margin: 10px 0px;
+}
+.items .items-els .item .view {
+  margin-top: 22px;
+  font-family: Roboto-Bold;
+  font-size: 15px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #0B3B3C;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=style.css.map */
