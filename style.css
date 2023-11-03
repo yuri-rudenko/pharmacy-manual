@@ -175,11 +175,11 @@ header .right .cart .top {
 }
 .guide .stage .arrow {
   position: absolute;
-  margin-left: 385px;
+  margin-left: 25vw;
 }
 .guide .stage .arrow-bot {
   margin-top: 200px;
-  margin-left: 365px;
+  margin-left: 25vw;
 }
 
 .arrow-down {
@@ -190,17 +190,15 @@ header .right .cart .top {
   border-top: 2px solid lightgray;
   padding-top: 60px;
   margin-bottom: 46px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .items .top-text {
   font-size: 35px;
   margin-bottom: 40px;
+  text-align: center;
 }
 .items .items-els {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 5px;
 }
 .items .items-els .item {
@@ -212,11 +210,11 @@ header .right .cart .top {
   align-items: center;
   padding-top: 22px;
   padding-bottom: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .items .items-els .item img {
-  width: 400px;
+  width: 300px;
 }
 .items .items-els .item .title {
   font-size: 21px;
@@ -231,6 +229,80 @@ header .right .cart .top {
   border-bottom: 3px solid #0B3B3C;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+}
+
+.wellbeing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px;
+  background-color: #E8EFE9;
+  align-items: center;
+}
+.wellbeing .left {
+  justify-self: left;
+}
+.wellbeing .left p {
+  text-align: left;
+}
+.wellbeing .left .new {
+  background-color: #BDCDC5;
+  width: fit-content;
+  padding: 6px;
+  margin-bottom: 24px;
+}
+.wellbeing .left .new p {
+  font-size: 14px;
+  font-weight: bold;
+}
+.wellbeing .left .name {
+  font-family: Roboto-Bold;
+  font-size: 36px;
+  margin-bottom: 27px;
+}
+.wellbeing .left .description {
+  max-width: 600px;
+  margin-bottom: 37px;
+}
+.wellbeing .left .view {
+  background-color: #7E0707;
+  width: 320px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.wellbeing .left .view p {
+  text-transform: uppercase;
+  color: white;
+  font-family: Roboto-Bold;
+  letter-spacing: 0.1em;
+}
+.wellbeing .left .included {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.wellbeing .left .included .el {
+  margin: auto 20px;
+  display: flex;
+}
+.wellbeing .left .included .el img {
+  margin-right: 10px;
+}
+.wellbeing .right {
+  justify-self: right;
+}
+.wellbeing .right .parts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.wellbeing .right .parts .el {
+  padding: 21px 44px;
+  background-color: white;
+}
+.wellbeing .right .parts img {
+  margin-bottom: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

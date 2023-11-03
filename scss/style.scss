@@ -12,6 +12,7 @@ $green: #0B3B3C;
 $red: #7E0707;
 $light-green: #00B67A;
 $light-grey: #DCDCE6;
+$lime: #E8EFE9;
 
 * {
     margin: 0;
@@ -183,11 +184,11 @@ header {
         }
         .arrow {
             position: absolute;
-            margin-left: 385px;
+            margin-left: 25vw;
         }
         .arrow-bot {
             margin-top: 200px;
-            margin-left: 365px;
+            margin-left: 25vw;
         }
     }
 }
@@ -199,20 +200,18 @@ header {
     border-top: 2px solid lightgray;
     padding-top: 60px;
     margin-bottom: 46px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     .top-text {
         font-size: 35px;
         margin-bottom: 40px;
+        text-align: center;
     }
     .items-els {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 5px;
 
         .item {
-            background-color: #E8EFE9;
+            background-color: $lime;
             max-width: 670px;
             display: flex;
             flex-direction: column;
@@ -221,11 +220,11 @@ header {
             padding:  {
                 top: 22px;
                 bottom: 50px;
-                left: 80px;
-                right: 80px; 
+                left: 30px;
+                right: 30px; 
             }
             img {
-                width: 400px;
+                width: 300px;
             }
             .title {
                 font-size: 21px;
@@ -240,6 +239,82 @@ header {
                 border-bottom: 3px solid $green;
                 letter-spacing: 0.15em;
                 text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.wellbeing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+    background-color: $lime;
+    align-items: center;
+    .left {
+        justify-self: left;
+
+        p{
+            text-align: left;
+        }
+        .new {
+            background-color: #BDCDC5;
+            width: fit-content;
+            padding: 6px;
+            p {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            margin-bottom: 24px;
+        }
+        .name {
+            font-family: Roboto-Bold;
+            font-size: 36px;
+            margin-bottom: 27px;
+            
+        }
+        .description {
+            max-width: 600px;
+            margin-bottom: 37px;
+        }
+        .view {
+            background-color: $red;
+            width: 320px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                text-transform: uppercase;
+                color: white;
+                font-family: Roboto-Bold;
+                letter-spacing: 0.1em;
+            }
+            margin-bottom: 40px;
+        }
+        .included {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            .el {
+                margin: auto 20px;
+                img {
+                    margin-right: 10px;
+                }
+                display: flex;
+            }
+        }
+    }
+    .right {
+        justify-self: right;
+        .parts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            .el {
+                padding: 21px 44px;
+                background-color: white;
+            }
+            img {
+                margin-bottom: 8px;
             }
         }
     }
